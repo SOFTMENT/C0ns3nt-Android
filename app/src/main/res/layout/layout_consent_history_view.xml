@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/btn_back"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vijay R"
+            android:textColor="@color/black"
+            android:fontFamily="@font/pantonnarrowbold"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/consentId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4838234"
+            android:textColor="#007AFF"
+            android:fontFamily="@font/pantonnarrowsemibold"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textColor="#555555"
+            android:fontFamily="@font/pantonnarrowregular"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:fontFamily="@font/pantonnarrowsemibold"
+        android:textColor="#AAAAAA"
+        android:text="3 hours ago"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1024773177927",
+    "project_id": "c0ns3nt-e1db3",
+    "storage_bucket": "c0ns3nt-e1db3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024773177927:android:fa8ac8e403ecdf43672762",
+        "android_client_info": {
+          "package_name": "in.softment.c0ns3nt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024773177927-42q4utm521incefvrnikvhfju1lmeriv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkygjL-JRNVMsP7CuQWJfckYUy3AaIs34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024773177927-42q4utm521incefvrnikvhfju1lmeriv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1024773177927-rkgf746b4jmpm0338126doq4e04hl5vu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "in.softmentin.C0ns3nt"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

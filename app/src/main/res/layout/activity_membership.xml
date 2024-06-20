@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    tools:context=".MembershipActivity">
+
+    <ImageView
+        android:src="@drawable/group1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+
+        android:layout_marginTop="32dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Upgrade to Premium"
+        android:fontFamily="@font/pantonnarrowbold"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Access our premium perks"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:textSize="14sp"
+        android:textColor="#AAA"
+        />
+
+    <RelativeLayout
+        android:id="@+id/black"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:buttonTint="#4608C1"
+                android:id="@+id/blackRadio"
+                />
+            <LinearLayout
+                android:layout_toEndOf="@+id/blackRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BLACK TIER"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pantonnarrowbold"
+
+                    />
+                <TextView
+                   
+                    android:fontFamily="@font/pantonnarrowregular"
+                    android:textSize="13sp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$99.99 per month"
+                    android:layout_marginTop="2dp"
+                    />
+                
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/blackInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/outline_info_24"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:buttonTint="#4608C1"
+                android:id="@+id/platinumRadio"
+                />
+            <LinearLayout
+                android:layout_toEndOf="@+id/platinumRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLATINUM TIER"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pantonnarrowbold"
+
+                    />
+                <TextView
+
+                    android:fontFamily="@font/pantonnarrowregular"
+                    android:textSize="13sp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$14.99 per month"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/platinumInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/outline_info_24"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:buttonTint="#4608C1"
+                android:id="@+id/goldRadio"
+                />
+            <LinearLayout
+                android:layout_toEndOf="@+id/goldRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOLD TIER"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pantonnarrowbold"
+
+                    />
+                <TextView
+
+                    android:fontFamily="@font/pantonnarrowregular"
+                    android:textSize="13sp"
+                    android:textColor="#999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$3.99 per month"
+                    android:layout_marginTop="2dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/goldInfo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/outline_info_24"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <RadioButton
+                android:layout_marginBottom="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:buttonTint="#4608C1"
+                android:id="@+id/freeRadio"
+                />
+            <LinearLayout
+                android:layout_toEndOf="@+id/freeRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="17dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FREE TIER"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/pantonnarrowbold"
+
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/freeInfo"
+                android:layout_alignParentEnd="true"
+               android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/outline_info_24"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="#a020f0"
+        android:text="Subscribe Now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:id="@+id/subscribeBtn"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/termsOfUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#007AFF"
+            android:text="Terms Of Use"
+            android:textSize="12sp"
+            android:fontFamily="@font/pantonnarrowregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="  |  "
+            android:textSize="12sp"
+            android:fontFamily="@font/pantonnarrowregular"
+            />
+        <TextView
+            android:id="@+id/privacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#007AFF"
+            android:text="Privacy Policy"
+            android:textSize="12sp"
+            android:fontFamily="@font/pantonnarrowregular"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

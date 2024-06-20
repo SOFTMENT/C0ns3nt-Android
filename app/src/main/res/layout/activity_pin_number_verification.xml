@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PinNumberVerificationActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:src="@drawable/group3"
+        android:layout_below="@+id/back"
+        android:id="@+id/group1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group1"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="PIN Number"
+        android:textSize="25sp"
+        android:fontFamily="@font/pantonnarrowbold"
+        android:textColor="@color/white"
+        android:id="@+id/fingerPrintUnlock"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fingerPrintUnlock"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="Confirm your PIN Number"
+        android:textSize="14sp"
+        android:fontFamily="@font/robotocondensedregular"
+        android:textColor="#9a9a9a"
+        />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+
+    >
+    <EditText
+
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/box1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        />
+    <EditText
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/box2"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        />
+    <EditText
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/box3"
+        android:layout_marginEnd="12dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        />
+    <EditText
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/box4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        />
+</LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_back"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#a020f0"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:id="@+id/confirm"
+        />
+</RelativeLayout>

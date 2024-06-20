@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/cancel"
+        android:id="@+id/cancel"
+        />
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cancel"
+        android:textColor="@color/white"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textSize="22sp"
+        android:layout_marginTop="24dp"
+        android:text="Please Register to "
+        android:fontFamily="@font/pantonnarrowbold"
+        />
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl1"
+        android:textColor="@color/white"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:textSize="22sp"
+        android:layout_marginTop="2dp"
+        android:text="Get Started!"
+        android:fontFamily="@font/pantonnarrowbold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/email"
+        android:layout_below="@+id/lbl2"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        android:hint="Email Address"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:textSize="14sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:id="@+id/password"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="@color/white"
+        android:hint="Password"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:textSize="14sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textPassword"
+        />
+   <LinearLayout
+       android:id="@+id/termsAndConditionsLL"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:layout_below="@+id/password"
+       android:layout_marginTop="20dp"
+       android:orientation="horizontal"
+       >
+       <CheckBox
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:buttonTint="@color/white"
+           />
+       <TextView
+           android:layout_marginStart="4dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="I have read and accept the"
+           android:textSize="12sp"
+           android:fontFamily="@font/pantonnarrowregular"
+           android:textColor="@color/white"
+           />
+       <TextView
+           android:layout_marginStart="4dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Terms of Service"
+           android:textSize="12sp"
+           android:fontFamily="@font/pantonnarrowregular"
+           android:textColor="#007AFF"
+           android:id="@+id/tos"
+           />
+   </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:layout_below="@+id/termsAndConditionsLL"
+        android:background="@drawable/btn_back"
+        android:backgroundTint="#a020f0"
+        android:id="@+id/signUp"
+        android:textAllCaps="false"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="14sp"
+            android:fontFamily="@font/pantonnarrowsemibold"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="14sp"
+            android:fontFamily="@font/pantonnarrowsemibold"
+            android:textColor="#a020f0"
+            android:layout_marginStart="8dp"
+            android:id="@+id/signIn"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

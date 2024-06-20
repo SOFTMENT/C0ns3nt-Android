@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    tools:context=".ScanQRCodeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10sp"
+        android:src="@drawable/baseline_arrow_back_24"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:textSize="16sp"
+        android:fontFamily="@font/pantonnarrowsemibold"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        />
+</LinearLayout>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/barcode_scanner"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barcode_scanner"
+        android:text="Please align the QR Code within the scanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotocondensedregular"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

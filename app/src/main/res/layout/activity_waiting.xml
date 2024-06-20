@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PinNumberVerificationActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="Waiting"
+        android:textSize="25sp"
+        android:fontFamily="@font/pantonnarrowbold"
+        android:textColor="@color/white"
+        android:id="@+id/fingerPrintUnlock"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fingerPrintUnlock"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="Waiting for other user confirmation"
+        android:textSize="14sp"
+        android:fontFamily="@font/robotocondensedregular"
+        android:textColor="#9a9a9a"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/waiting" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_back"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#FF3B30"
+        android:text="Cancel Consent"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/pantonnarrowregular"
+        android:id="@+id/cancel"
+        />
+</RelativeLayout>

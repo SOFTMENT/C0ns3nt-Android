@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SuccessActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="Consent Verified"
+        android:textSize="25sp"
+        android:fontFamily="@font/pantonnarrowbold"
+        android:textColor="@color/white"
+        android:id="@+id/fingerPrintUnlock"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fingerPrintUnlock"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="Verifications successfully completed"
+        android:textSize="14sp"
+        android:fontFamily="@font/robotocondensedregular"
+        android:textColor="#9a9a9a"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/success" />
+
+
+</RelativeLayout>
